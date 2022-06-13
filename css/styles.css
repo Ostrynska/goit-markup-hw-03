@@ -29,10 +29,6 @@
   --light-bg-color: #f5f4fa;
 }
 
-* {
-  /* box-sizing: border-box; */
-}
-
 p,
 h1,
 h2,
@@ -53,6 +49,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 /* Main */
 body {
@@ -89,21 +86,22 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
 
-  /* outline: 2px solid tomato; */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ---------------Index.html--------------- */
-
 /* ---------------Шапка сайта---------------*/
-.header {
+.header .container {
   padding-top: 24px;
   padding-bottom: 25px;
-}
 
-.header .container {
   display: flex;
   align-items: center;
+
 }
 
 .header-logo {
@@ -201,7 +199,6 @@ body {
   border: none;
   border-radius: 4px;
 
-  /* font-family: inherit; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -232,7 +229,6 @@ body {
 }
 
 .benefits-title {
-  padding-top: 94px;
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -242,8 +238,6 @@ body {
 }
 
 .benefits-text {
-  padding-bottom: 94px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -252,7 +246,11 @@ body {
 }
 
 /* ---------------Наши услуги---------------*/
+.section.services {
+  padding-top: 0; 
+}
 .services-title {
+
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -264,10 +262,6 @@ body {
 .services-list {
   display: flex;
   justify-content: center;
-}
-
-.services-item {
-  padding-bottom: 94px;
 }
 
 .services-item:not(:last-child) {
@@ -284,7 +278,6 @@ body {
 }
 
 .team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -309,10 +302,6 @@ body {
   text-align: center;
 
   background-color: var(--main-bg-color);
-}
-
-.team-items {
-  padding-bottom: 94px;
 }
 
 .team-items:not(:last-child) {
@@ -394,10 +383,13 @@ body {
 }
 
 /* ---------------Portfolio.html--------------- */
-
 /* ---------------WebStudio Портфолио--------------- */
+.container.portfolio-header {
+  border-bottom: 1px solid var(--portfolio-item-stroke);
+}
+
 .container.portfolio {
-  padding-top: 171px;
+  padding-top: 180px;
   padding-bottom: 8px;
 }
 
@@ -412,8 +404,6 @@ body {
 }
 
 .portfolio-button {
-  /* font-family: inherit; */
-
   display: inline-block;
   border: none;
   padding: 6px 22px;
@@ -470,7 +460,7 @@ body {
 }
 
 .portfolio-items {
-  outline: 1px solid var(--portfolio-item-stroke);
+  border-bottom: 1px solid var(--portfolio-item-stroke);
   margin-right: 30px;
   margin-bottom: 30px;
 }
