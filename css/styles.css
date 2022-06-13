@@ -384,7 +384,7 @@ body {
 
 /* ---------------Portfolio.html--------------- */
 /* ---------------WebStudio Портфолио--------------- */
-.container.portfolio-header {
+.header {
   border-bottom: 1px solid var(--portfolio-item-stroke);
 }
 
