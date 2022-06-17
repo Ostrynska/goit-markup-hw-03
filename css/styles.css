@@ -96,15 +96,13 @@ body {
 /* ---------------Index.html--------------- */
 /* ---------------Шапка сайта---------------*/
 .header .container {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   display: flex;
   align-items: center;
-
 }
 
 .header-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 93px;
 
   font-family: 'Raleway', sans-serif;
@@ -128,7 +126,14 @@ body {
   display: flex;
 }
 
+.header .link {
+  display: block;
+}
+
 .header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -163,6 +168,9 @@ body {
 
 .header-email,
 .header-tel {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -176,15 +184,18 @@ body {
 
 /* ---------------Предложение---------------*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+
   background-color: var(--dark-bg-color);
 }
 
 .hero-title {
-  padding-top: 200px;
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
 
-  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -323,12 +334,14 @@ body {
 
 /* ---------------Подвал сайта---------------*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--dark-bg-color);
 }
 
 .footer-logo {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
 
   font-family: 'Raleway', sans-serif;
@@ -349,10 +362,6 @@ body {
 
 .footer-list .item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-list {
-  padding-bottom: 60px;
 }
 
 .footer-address {
@@ -385,7 +394,9 @@ body {
 /* ---------------Portfolio.html--------------- */
 /* ---------------WebStudio Портфолио--------------- */
 .header {
-  border-bottom: 1px solid var(--portfolio-item-stroke);
+  border-bottom-width: 1px; 
+  border-bottom-style:solid; 
+  border-bottom-color: var(--portfolio-item-stroke);
 }
 
 .container.portfolio {
@@ -434,6 +445,7 @@ body {
 .portfolio.list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .item-description {
@@ -460,17 +472,11 @@ body {
 }
 
 .portfolio-items {
-  border-bottom: 1px solid var(--portfolio-item-stroke);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.portfolio-items:nth-child(n + 7) {
-  margin-bottom: 0px;
-}
-
-.portfolio-items:nth-child(3n) {
-  margin-right: 0;
+  flex-basis: calc((100% - 60px) / 3);
+  
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--portfolio-item-stroke);
 }
 
 .abbr {
