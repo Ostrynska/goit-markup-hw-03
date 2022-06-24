@@ -102,7 +102,6 @@ body {
 .header-logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  /* margin-right: 93px; */
 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -125,8 +124,8 @@ body {
   display: flex;
 }
 
-.header .link {
-  display: block;
+.header-item:first-child {
+  margin-left: 93px;
 }
 
 .header-link {
@@ -138,10 +137,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-}
-
-.header-item:first-child {
-  margin-left: 93px;
 }
 
 .header-item:not(:last-child) {
@@ -167,10 +162,15 @@ body {
 
 .header-contacts {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-email,
 .header-tel {
+  display: flex;
+  align-items: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
