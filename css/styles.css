@@ -122,13 +122,12 @@ body {
 
 .header-list {
   display: flex;
-}
-
-.header-item:first-child {
   margin-left: 93px;
 }
 
 .header-link {
+  display: block;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
